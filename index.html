@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca CEPs</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <div class="container">
+        <h1>Busar CEPs</h1>
+        <input type="text" id="cep" placeholder="Digite o CEP a Consultar!" maxlength="8">
+        <button onclick="buscaCep()">Buscar</button>
+        <div class="resultado" id="resultado"></div>
+    </div>
     
 </body>
 </html>
