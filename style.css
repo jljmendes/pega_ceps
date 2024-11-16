@@ -23,3 +23,48 @@ input[type="text"]{
     border-radius: 5px; 
     text-align: center;   
 }
+.container{
+    max-width: 500px;
+    padding: 20px;
+    background-color: #E0FFFF;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+input[type="text"]{
+    width: 90%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #A9A9A9;
+    border-radius: 5px; 
+    text-align: center;   
+}
+button{
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    background-color: #00BFFF;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #0000FF;
+}
+.resultado{
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    background-color: #f4f4f9;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
