@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Busar CEPs</h1>
-        <input type="text" id="cep" placeholder="Digite o CEP a Consultar!" maxlength="8">
+        <input type="text" id="cep" placeholder="Digite o CEP a Consultar!" maxlength="10" oninput="formatarCep(this)">
         <button onclick="buscaCep()">Buscar</button>
         <div class="resultado" id="resultado"></div>
     </div>
