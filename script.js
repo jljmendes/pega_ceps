@@ -7,3 +7,8 @@ function formatarCep(input){
     }
     input.value = cep;
 }
+
+function buscaCep(){
+    const cep = document.getElementById("cep").value.replace(/\D/g, '');
+    const resultadoDiv = document.getElementById("resultado");
+}
