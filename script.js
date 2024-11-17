@@ -16,4 +16,6 @@ function buscaCep(){
         resultadoDiv.innerHTML = "<p>Informe um CEP válido com 8 dígitos!</p>";
         return;
     }
+
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
 }
