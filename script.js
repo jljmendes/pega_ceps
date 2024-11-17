@@ -11,4 +11,9 @@ function formatarCep(input){
 function buscaCep(){
     const cep = document.getElementById("cep").value.replace(/\D/g, '');
     const resultadoDiv = document.getElementById("resultado");
+
+    if (cep.length !== 8 || isNaN(cep)){
+        resultadoDiv.innerHTML = "<p>Informe um CEP válido com 8 dígitos!</p>";
+        return;
+    }
 }
