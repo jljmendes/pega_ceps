@@ -22,4 +22,15 @@ function buscaCep(){
             if (!response.ok) throw new Error("Falha ao consultar CEP!");
             return response.json();
         })
+        .then(data => {
+            if (data.erro){
+                resultadoDiv.innerHTML = "<p>CEP não localizado!</p>";
+            } else {
+                resultadoDiv.innerHTML = ``;
+            }
+        })
+        .catch(error => {
+            resultadoDiv.innerHTML = "";
+            console.erro(error);
+        });
 }       
