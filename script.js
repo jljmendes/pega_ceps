@@ -18,4 +18,8 @@ function buscaCep(){
     }
 
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
-}
+        .then(response => {
+            if (!response.ok) throw new Error("Falha ao consultar CEP!");
+            return response.json();
+        })
+}       
