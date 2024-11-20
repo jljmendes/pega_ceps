@@ -26,11 +26,19 @@ function buscaCep(){
             if (data.erro){
                 resultadoDiv.innerHTML = "<p>CEP não localizado!</p>";
             } else {
-                resultadoDiv.innerHTML = ``;
+                resultadoDiv.innerHTML = `
+                <p><b>Endereço:</b> ${data.logradouro}</p>
+                <p><b>Bairro:</b> ${data.bairro}</p>
+                <p><b>Cidade:</b> ${data.localidade}</p>
+                <p><b>Estado:</b> ${data.uf}</p>
+                <p><b>Região:</b> ${data.regiao}</p>
+                <p><b>DDD:</b> ${data.ddd}</p>
+                <p><b>IBGE:</b> ${data.ibge}</p>
+                `;
             }
         })
         .catch(error => {
-            resultadoDiv.innerHTML = "";
+            resultadoDiv.innerHTML = "<p>Erro ao tentar localizar o CEP!</p>";
             console.erro(error);
         });
 }       
